@@ -3,7 +3,7 @@
     "build": "tsup src",
     "start": "tsx src/index.ts",
     "start:dev": "tsx watch src/index.ts",
-    "start:prod": "node dist/index.ts",
+    "start:prod": "node dist/index.js",
     "format": "prettier --config .prettierrc src/**/*.ts --write",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix"
