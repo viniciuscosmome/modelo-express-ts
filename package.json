@@ -1,0 +1,30 @@
+{
+  "scripts": {
+    "build": "tsup src",
+    "start": "tsx src/index.ts",
+    "start:dev": "tsx watch src/index.ts",
+    "start:prod": "node dist/index.ts",
+    "format": "prettier --config .prettierrc src/**/*.ts --write",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "20.8.2",
+    "@typescript-eslint/eslint-plugin": "6.7.4",
+    "@typescript-eslint/parser": "6.7.4",
+    "eslint": "8.50.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-prettier": "5.0.0",
+    "git-commit-msg-linter": "5.0.4",
+    "prettier": "3.0.3",
+    "tsup": "7.2.0",
+    "tsx": "3.13.0",
+    "typescript": "5.2.2"
+  },
+  "version": "1.0.0",
+  "private": "true",
+  "repository": "https://github.com/viniciuscosmome/modelo-express-ts.git",
+  "author": "viniciuscosmome <48590313+viniciuscosmome@users.noreply.github.com>",
+  "license": "MIT"
+}
