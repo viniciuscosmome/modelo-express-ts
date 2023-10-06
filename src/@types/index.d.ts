@@ -10,3 +10,8 @@ declare type iSignInInput = {
   password: string;
   remember: boolean;
 };
+
+declare type iValidatesAccessDataOutput = {
+  id: number;
+  name: string;
+};
