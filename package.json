@@ -6,7 +6,8 @@
     "start:prod": "node dist/index.js",
     "format": "prettier --config .prettierrc src/**/*.ts --write",
     "lint": "eslint src/**/*.ts",
-    "lint:fix": "eslint src/**/*.ts --fix"
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "test": "vitest"
   },
   "dependencies": {
     "dotenv": "16.3.1",
