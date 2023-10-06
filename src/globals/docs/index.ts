@@ -5,6 +5,7 @@
 import { SwaggerUiOptions } from 'swagger-ui-express';
 import { APP_LICENSE, APP_LICENSE_URL, APP_TITLE } from 'globals/constants';
 import { exceptionsSchemas } from './exceptions.docs';
+import { authPaths, authSchemas } from './auth.docs';
 
 export const swaggerOptions: SwaggerUiOptions = {
   customSiteTitle: APP_TITLE,
@@ -19,7 +20,9 @@ export const docs = {
       url: APP_LICENSE_URL,
     },
   },
-  paths: {},
+  paths: {
+    ...authPaths,
+  },
   components: {
     securitySchemes: {
       bearerAuth: {
@@ -29,6 +32,7 @@ export const docs = {
       },
     },
     schemas: {
+      ...authSchemas,
       ...exceptionsSchemas,
     },
   },
