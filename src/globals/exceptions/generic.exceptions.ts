@@ -20,7 +20,7 @@ export class BadRequestException extends BaseException {
     super({
       code: 400,
       error: 'Bad Request',
-      message: message || 'Alguma informação fornecida não está correta.',
+      message: message || 'Uma ou mais propriedades passadas são inválidas.',
     });
   }
 }
