@@ -13,6 +13,7 @@ export const handleErrors = (
       code: error.code,
       error: error.error,
       message: error.message,
+      details: error.details,
     });
   }
 
