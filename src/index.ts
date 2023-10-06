@@ -7,7 +7,7 @@ import swaggerUI from 'swagger-ui-express';
 import { PORT } from './globals/constants';
 import { handleErrors } from './middlewares/handle.errors';
 import { routes } from './routes';
-import { docs, swaggerOptions } from 'globals/docs';
+import { docs, swaggerOptions } from './globals/docs';
 
 const app = express();
 

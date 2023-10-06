@@ -7,7 +7,7 @@ import {
   TooManyRequestsException,
   UnauthorizedException,
   UnprocessableEntityException,
-} from 'globals/exceptions';
+} from '../../globals/exceptions';
 
 const baseSchema = (error: BaseException) => {
   return {

@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { NotFoundException } from 'globals/exceptions';
+import { NotFoundException } from '../../globals/exceptions';
 
 export const generalController = {
   async home(req: Request, res: Response) {

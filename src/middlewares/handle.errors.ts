@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from 'express';
-import { IS_PRODUCTION_ENV } from 'globals/constants';
-import { BadRequestException, BaseException } from 'globals/exceptions';
+import { IS_PRODUCTION_ENV } from '../globals/constants';
+import { BadRequestException, BaseException } from '../globals/exceptions';
 import { ZodError } from 'zod';
 
 export const handleErrors = (

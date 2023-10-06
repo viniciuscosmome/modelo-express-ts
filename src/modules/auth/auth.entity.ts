@@ -1,4 +1,4 @@
-import { PASSWORD_REGEX } from 'globals/constants';
+import { PASSWORD_REGEX } from '../../globals/constants';
 import { z } from 'zod';
 
 export const SignInEntity = z

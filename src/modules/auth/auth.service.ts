@@ -1,4 +1,4 @@
-import { UnauthorizedException } from 'globals/exceptions';
+import { UnauthorizedException } from '../../globals/exceptions';
 
 export const authService = {
   async validatesAccessData(input: iSignInInput): Promise<iValidatesAccessDataOutput> {
