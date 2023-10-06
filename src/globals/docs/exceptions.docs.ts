@@ -25,6 +25,10 @@ const baseSchema = (error: BaseException) => {
         type: 'string',
         example: error.message,
       },
+      details: {
+        type: 'object',
+        nullable: true,
+      },
     },
   };
 };
