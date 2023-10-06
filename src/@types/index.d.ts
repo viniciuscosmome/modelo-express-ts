@@ -4,3 +4,9 @@ declare type iBaseException = {
   message: string;
   details?: object;
 };
+
+declare type iSignInInput = {
+  email: string;
+  password: string;
+  remember: boolean;
+};
