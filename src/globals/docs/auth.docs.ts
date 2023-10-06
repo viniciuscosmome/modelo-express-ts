@@ -3,12 +3,21 @@ export const authPaths = {
     post: {
       tags: ['Authentication'],
       description: 'Parmito o acesso a conta.',
+      requestBody: {
+        content: {
+          'application/json': {
+            schema: {
+              $ref: '#/components/schemas/AuthSignInInput',
+            },
+          },
+        },
+      },
       responses: {
         '200': {
           content: {
             'application/json': {
               schema: {
-                $ref: '#/components/schemas/AuthSignInOutputOK',
+                $ref: '#/components/schemas/AuthSignInOutput$200',
               },
             },
           },
@@ -46,7 +55,24 @@ export const authPaths = {
 };
 
 export const authSchemas = {
-  AuthSignInOutputOK: {
+  AuthSignInInput: {
+    type: 'object',
+    properties: {
+      email: {
+        type: 'string',
+        example: 'email@example.com',
+      },
+      password: {
+        type: 'string',
+        example: 'strongW#3',
+      },
+      remember: {
+        type: 'boolear',
+        example: false,
+      },
+    },
+  },
+  AuthSignInOutput$200: {
     type: 'object',
     properties: {
       message: {
@@ -57,6 +83,19 @@ export const authSchemas = {
       },
       refreshToken: {
         type: 'string',
+      },
+      user: {
+        type: 'object',
+        properties: {
+          id: {
+            type: 'number',
+            example: '1',
+          },
+          name: {
+            type: 'string',
+            example: 'João',
+          },
+        },
       },
     },
   },
